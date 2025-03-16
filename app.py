@@ -1,9 +1,14 @@
 import dash
-from dash import html, dcc, callback, Input, Output, State
+from dash import html, dcc, callback, Input, Output, State, Dash
 from dash.exceptions import PreventUpdate
 import dash_bootstrap_components as dbc
 import pandas as pd
 import json
+import numpy as np
+import plotly.express as px
+import yfinance as yf
+import requests
+from bs4 import BeautifulSoup
 from datetime import datetime
 
 # Importar componentes personalizados
